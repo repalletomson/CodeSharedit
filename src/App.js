@@ -1,25 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
+// import { RouterProvider } from "react-router-dom";
+import React from "react";
+import { BrowserRouter,Routes,Route } from "react-router-dom";
+import Home from "./collabmode/Home";
+import EditorPage from "./collabmode/EditorPage"
+import HomePage from "./components/HomePage"
+import CodeEditor from './CodeEditor/CodeEditor'
+import toast, {Toaster} from 'react-hot-toast'
 
-function App() {
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <div >
+        <Toaster 
+          position="top-tight"
+          toastOptions={{
+            success:{
+              theme:{
+                primary:'#4aed99',
+              }
+            }}
+          }
+        
+        />
+      </div>
+       <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<HomePage/>}></Route>
+            <Route path="/codeeditor" element={<CodeEditor/>}></Route> 
+            <Route path="/CodeEditor" element={<Home/>}></Route> 
+            <Route path="/editor/:roomID" element={<EditorPage/>}></Route> 
+          </Routes>
+         
+         </BrowserRouter>
     </div>
   );
-}
-
+};
 export default App;
