@@ -6,11 +6,15 @@ import EditorPage from "./collabmode/EditorPage"
 import HomePage from "./components/HomePage"
 import CodeEditor from './CodeEditor/CodeEditor'
 import toast, {Toaster} from 'react-hot-toast'
+import { SpeedInsights } from "@vercel/speed-insights/react"
 
 
 const App = () => {
   return (
     <div>
+    <div> 
+      <SpeedInsights />
+    </div>
       <div >
         <Toaster 
           position="top-tight"
