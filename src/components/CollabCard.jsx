@@ -15,7 +15,7 @@ function CollabCard() {
             </p>
             <div className='flex items-center h-20'>
               <button className='bg-dark-2 w-[10rem] h-[2.5rem]  text-center text-dark-4 rounded'>
-                 <Link to="/CodeEditor">Collab Mode
+                 <Link to="/collabmode">Collab Mode
                  </Link>
               </button>
             </div>
