@@ -5,7 +5,7 @@ const path = require('path');
 const http = require('http');
 const { Server } = require('socket.io');
 const cors = require('cors');
-const ACTIONS = require('../src/Actions');
+const ACTIONS = require('./src/Actions');
 const server = http.createServer(app);
 const io = new Server(server);
 
@@ -69,9 +69,6 @@ io.on('connection', (socket) => {
 });
 
 // Code change
-
-
-
 
 // Disconnecting the user
 const PORT = process.env.PORT || 5000;

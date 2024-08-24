@@ -23,7 +23,7 @@
     "uuid": "^10.0.0",
     "web-vitals": "^2.1.4"
   },
-   "scripts": {
+  "scripts": {
     "start:front": "react-scripts start",
     "start": "npm run build && npm run server:prod",
     "build": "react-scripts build",
@@ -53,6 +53,7 @@
   "devDependencies": {
     "@types/codemirror": "^5.60.15",
     "autoprefixer": "^10.4.19",
+    "nodemon": "^3.1.4",
     "postcss": "^8.4.40",
     "tailwindcss": "^3.4.7"
   }
