@@ -28,7 +28,7 @@ const App = () => {
           <Routes>
             <Route path="/" element={<HomePage/>}></Route>
             <Route path="/codeeditor" element={<CodeEditor/>}></Route> 
-            <Route path="/CodeEditor" element={<Home/>}></Route> 
+            <Route path="/collabmode" element={<Home/>}></Route> 
             <Route path="/editor/:roomID" element={<EditorPage/>}></Route> 
           </Routes>
          
